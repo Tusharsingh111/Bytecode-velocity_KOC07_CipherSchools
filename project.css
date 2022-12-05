@@ -1,0 +1,258 @@
+body{
+    /*background-image:url("back2.webp");*/
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    /* background-image: url("back2.webp"); */
+
+}
+
+.heading{
+    display:flex;
+    background-color: rgb(199, 246, 246);
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.pur{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 45px;
+    color: red;
+}
+
+.user_id{
+
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+    
+
+.logo{
+
+    height:50px;
+    width:50px;
+    padding-left:10px;
+
+}
+
+.nav-box{
+
+    margin-top:10px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.navigation{
+    display:flex;
+    justify-content: space-evenly;
+    border-collapse: collapse;
+}
+.align{
+    text-align: center;
+    text-shadow: 3px 3px rgba(128, 128, 128, 0.495);
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.border{
+    border:2px solid black;
+    margin-left: 5px;
+    margin-right: 130px;
+    padding: 15px;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 40rem;  
+}
+
+a:hover{
+    color:yellowgreen
+}
+a:link{
+    color:aqua
+}
+
+.carousel-item{
+    display: flex;
+    justify-content: space-around;
+}
+.area2{
+    margin-top: 5px;
+}
+
+.det_border{
+    margin-top: 40px;
+    padding: 10px;
+    padding-top: 40px;
+    border:2px double white;
+    width:500px;
+    text-align: center;
+    background-image:url("https://www.sriramakrishnahospital.com/wp-content/uploads/2021/06/Blood-Donation-1.jpg");
+    background-size: cover;
+    width:800px;
+    height: 500px;
+    border-radius: 5rem;
+
+}
+
+.form-control{
+    background-color:white;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.area{
+    height:30px;
+    padding:15px;
+    font-weight: bold;
+    color:yellow;
+    font-size: larger;
+}
+
+.blood_group{
+    height:30px;
+    font-weight: bold;
+}
+
+.video{
+    display: block;
+    height:400px;
+    width:700px;
+    margin-top: 50px;
+    
+    margin-right:auto;
+    margin-left:auto;
+
+}
+.process{
+    
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    
+
+}
+.head{
+
+    margin:50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px #bec1c497;
+}
+
+
+
+.summery{
+    text-align: center;
+    display:block;
+    font-size:20px;
+    font-weight:bold;
+    word-wrap: normal;
+
+}
+
+.background3{
+    background-color:rgb(237, 213, 213) ;
+    padding-top: auto;
+    padding-bottom: 20px;
+}
+.background1{
+    background-color:#c5c6c7;
+
+}
+.background2{
+    background-color:white;
+    width:95%;
+
+}
+
+.process_points{
+    display:flex;
+    border: 2px solid none;
+    padding :5px;
+    width:60%;
+    margin-left: 300px;
+}
+
+
+
+.process_image{
+
+    width: 400px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+
+.li{
+    margin-top: 30px;
+}
+
+Style all input fields 
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+  
+/* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    }
+    
+    /* Style the container for inputs */
+    .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    }
+    
+    /* The message box is shown when the user clicks on the password field */
+    #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 600px;
+    }
+    
+    #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+    }
+    
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid {
+    color: green;
+    }
+    
+    .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+    }
+    
+    /* Add a red text color and an "x" when the requirements are wrong */
+    .invalid {
+    color: red;
+    }
+    
+    .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+    }
