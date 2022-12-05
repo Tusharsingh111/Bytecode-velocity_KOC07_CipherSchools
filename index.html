@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD DONATION CAMP</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="heading">
+        <div>
+            <div class="heading">
+                <img class="logo" src="https://cdn-icons-png.flaticon.com/512/1056/1056501.png" alt="logo">
+                <h2 class="pur">BLOOD DONATION CAMP</h2>
+            </div>
+        </div>
+        <div>
+            <form action="/action.php">
+                <div class="heading">
+                    <div class="user_id" >
+                        <label for="usrname">Username</label>
+                        <input type="text" id="usrname" name="usrname" required>
+
+                    </div>    
+                    
+                    <div class="user_id">
+                        <label for="psw">Password</label>
+                        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
+          <script>
+            var myInput = document.getElementById("psw");
+            var letter = document.getElementById("letter");
+            var capital = document.getElementById("capital");
+            var number = document.getElementById("number");
+            var length = document.getElementById("length");
+            
+            // When the user clicks on the password field, show the message box
+            myInput.onfocus = function() {
+              document.getElementById("message").style.display = "block";
+       
+            }
+            
+            // When the user clicks outside of the password field, hide the message box
+            myInput.onblur = function() {
+              document.getElementById("message").style.display = "none";
+            }
+            
+            // When the user starts to type something inside the password field
+            myInput.onkeyup = function() {
+              // Validate lowercase letters
+              var lowerCaseLetters = /[a-z]/g;
+              if(myInput.value.match(lowerCaseLetters)) {  
+                letter.classList.remove("invalid");
+                letter.classList.add("valid");
+              } else {
+                letter.classList.remove("valid");
+                letter.classList.add("invalid");
+              }
+              
+              // Validate capital letters
+              var upperCaseLetters = /[A-Z]/g;
+              if(myInput.value.match(upperCaseLetters)) {  
+                capital.classList.remove("invalid");
+                capital.classList.add("valid");
+              } else {
+                capital.classList.remove("valid");
+                capital.classList.add("invalid");
+              }
+            
+              // Validate numbers
+              var numbers = /[0-9]/g;
+              if(myInput.value.match(numbers)) {  
+                number.classList.remove("invalid");
+                number.classList.add("valid");
+              } else {
+                number.classList.remove("valid");
+                number.classList.add("invalid");
+              }
+              
+              // Validate length
+              if(myInput.value.length >= 8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+              } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+              }
+            }
+            </script> 
+        </header>
+
+    <header>
+        <nav class="nav-box">
+            <ul class="navigation">
+                <a class="border" href="">Register</a>
+                <a class="border" href="">Why Donate Blood </a>
+                <a class="border" href="">Who Can Give Blood</a>
+                <a class="border" href="">Refer A Friend</a>
+                <a class="border" href="">Contact Us</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+    
+            <div class="carousel-inner">
+              
+                <div class="carousel-item active" data-bs-interval="10000">
+                <img  height="600px" src="https://i.ibb.co/Bjfkdff/7268-02-blood-bank-powerpoint-template-16x9-13.png" class="d-block w-100" alt="...">
+              </div>
+    
+              
+
+              <div class="carousel-item"  >
+                <img height="600px" src="https://i.ibb.co/KLk4nCD/Blood-Donation-Flyer-Made-with-Poster-My-Wall.jpg" class="d-block w-100" alt="...">
+              </div>
+     
+              <div class="carousel-item">
+                <div><video autoplay playsinline muted loop onclick="event.target.muted = !event.target.muted;" poster="https://d1csarkz8obe9u.cloudfront.net/embeddesigns/394af9a9f65169d69093290197affb5c_img_embed.jpg" style="max-width:533px;max-height:800px"><source height="600px" src="https://d1csarkz8obe9u.cloudfront.net/embeddesigns/394af9a9f65169d69093290197affb5c_embed.mp4" type="video/mp4"></video></div>
+              </div>
+    
+              <div class="carousel-item">
+                <div><video autoplay playsinline muted loop onclick="event.target.muted = !event.target.muted;" poster="https://d1csarkz8obe9u.cloudfront.net/embeddesigns/4e3b22313154d1e1642111ff61306ed9_img_embed.jpg" style="max-width:800px;max-height:800px"><source height="600px" src="https://d1csarkz8obe9u.cloudfront.net/embeddesigns/4e3b22313154d1e1642111ff61306ed9_embed.mp4" type="video/mp4"></video></div>
+              </div>
+              
+               
+    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span> 
+            </button>
+          </div>
+    </section>
+   
+
+    <section>
+        <p class="align" style="color:rgb(1, 7, 3)">Finding A Doner</p>
+        <center><div class="det_border">
+                <div >
+                    
+                    <div>
+
+                        <form action="action.php">
+                            
+                            <label class="area" for="state">State:</label>
+                            <select class="area2" onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select><br>
+                            
+                            <label class="area" for="City">City:</label>
+                            <select class="area2" id ="state" class="form-control" required></select>
+                            
+                            <script language="javascript">print_state("sts");</script>
+                            <br><br><br>
+                            
+                            <label class="area" for="area">Area:</label>
+                            <input type="text" name="area" class="area" placeholder="Area">
+
+                            <br><br><br>
+                        
+                            <label class="area" for="blood_group">Blood Group:</label>
+                            <select name="blood_group" class="blood_group" >
+                                <option value="A+">A+</option>
+                                <option value="B+">B+</option>
+                                <option value="A-">A-</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+
+                        </form>
+
+                    
+
+
+                    </div>
+                </div>
+                
+            </div></center>
+       <!-- <iframe class="video" src="https://youtu.be/Kn4KoCm4i6k?t=9"></iframe>
+        <video src="https://youtu.be/Kn4KoCm4i6k?t=9"></video>-->
+
+    </section>
+
+
+    <section class="process">
+        <div>
+            <div>
+        
+                <div class="head">
+                    <header>The Blood Donation Process</header>
+                    <p class="summery">The blood donation process from the time you arrive until the time you leave takes about an hour. The donation itself is only about 8-10 minutes on average.</p>
+                </div>
+            
+
+                <div>
+                    <div class="head">Registration</div>
+                    <div class="process_points" >
+                        <img class="process_image" src="https://www.redcrossblood.org/content/dam/redcrossblood/rcb/donors-with-masks/Donor_registering.jpg.transform/1288/q82/feature/image.jpeg">
+                        <div>
+                            <ul class="li">
+                                <li>We will sign you in and go over basic eligibility.</li><br>
+                                <li>You’ll be asked to show ID, such as your driver’s license.</li><br>
+                                <li>You’ll read some information about donating blood.</li><br>
+                                <li>We’ll ask you for your complete address.  Your address needs to be complete (including PO Box, street/apartment number) and the place where you will receive your mail 8 weeks from donation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="background3">
+                    <div class="head">Health History</div>
+                    <div class="process_points">
+                        <img class="process_image" src="https://www.redcrossblood.org/content/dam/redcrossblood/rcb/donate-blood/components/520x295-health-history.jpg.transform/1288/q82/feature/image.jpeg" alt="history">
+                        <div>
+                            <ul class="li">
+                                <li>You’ll answer a few questions about your health history and places you’ve traveled, during a private and confidential interview.</li><br>
+                                <li>You’ll tell us about any prescription and/or over the counter medications that may be in your system.</li><br>
+                                <li>We’ll check your temperature, pulse, blood pressure and hemoglobin level. </li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="head">Your Donation</div>
+                    <div class="process_points">
+                        <img class="process_image" src="https://www.redcrossblood.org/content/dam/redcrossblood/rcb/donate-blood/components/your-donation.jpg.transform/1288/q82/feature/image.jpeg" alt="donation">
+                        <div>
+                            <ul class="li">
+                                <li>If you’re donating whole blood, we’ll cleanse an area on your arm and insert a brand new sterile needle for the blood draw. (This feels like a quick pinch and is over in seconds.)</li><br>
+                                <li>Other types of donations, such as platelets, are made using an apheresis machine which will be connected to both arms.</li><br>
+                                <li>A whole blood donation takes about 8-10 minutes, during which you’ll be seated comfortably or lying down.</li><br>
+                                <li>When approximately a pint of whole blood has been collected, the donation is complete and a staff person will place a bandage on your arm.</li><br>
+                                <li>For platelets, the apheresis machine will collect a small amount of blood, remove the platelets, and return the rest of the blood through your other arm; this cycle will be repeated several times over about 2 hours. </li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="background3">
+                    <div class="head">Refreshment and Recovery</div>
+                    <div class="process_points">
+                        <img class="process_image" src="https://www.redcrossblood.org/content/dam/redcrossblood/rcb/donors-with-masks/After-Donating-Blood.jpg.transform/1288/q82/feature/image.jpeg" alt="thanku">
+                        <div>
+                            <ul class="li">
+                                <li>After donating blood, you’ll have a snack and something to drink in the refreshment area.</li><br>
+                                <li>You’ll leave after 10-15 minutes and continue your normal routine.</li><br>
+                                <li>Enjoy the feeling of accomplishment knowing you are helping to save lives.</li><br>
+                                <li>Take a selfie, or simply share your good deed with friends. It may inspire them to become blood donors. </li><br>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    
+    </section>
+
+   
+
+</body>
+</html>
